@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - rank</title>
+    {% else %}
+    <title>Welcome to rank</title>
+    {% endif %}
+  </head>
+  <body style="background: black">
+    <div>rank: <a href="/index">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
